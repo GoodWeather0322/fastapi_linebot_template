@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "line-bot-evas"
+version = "0.1.0"
+description = ""
+authors = ["Chris Chien <chris.chien@kenkone.com>"]
+readme = "README.md"
+packages = [{include = "line_bot_evas"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.100.0"
+line-bot-sdk = "^3.1.0"
+uvicorn = {extras = ["standard"], version = "^0.23.1"}
+apscheduler = "^3.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
